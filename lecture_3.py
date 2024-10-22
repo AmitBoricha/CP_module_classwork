@@ -77,3 +77,7 @@ int_x = int(input("Enter x int value:"))
 int_y = int(input("Enter y int value: "))
 
 print("Addition of two integer is:",int_x+int_y )
+
+vowels = ["a","e","i","o","u"]
+
+print(''.join([x for x in user_string if x not in vowels]))

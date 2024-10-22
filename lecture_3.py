@@ -63,3 +63,17 @@ if A == B:
 
 if A != B:
     print("THey are not same")
+
+
+# datatypes
+#1
+user_string = input("Please enter a string:")
+
+print("Number of characters in given string: ",len(user_string))
+
+#2
+int_x = int(input("Enter x int value:"))
+
+int_y = int(input("Enter y int value: "))
+
+print("Addition of two integer is:",int_x+int_y )

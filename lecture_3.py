@@ -80,4 +80,62 @@ print("Addition of two integer is:",int_x+int_y )
 
 vowels = ["a","e","i","o","u"]
 
-print(''.join([x for x in user_string if x not in vowels]))
+for i in vowels:
+    if i in user_string:
+        user_string.replace(i,"")
+
+# print(''.join([l for l in user_string if l not in vowels]))
+
+print(user_string)
+
+
+
+
+
+##C++
+"""
+#include <iostream>
+using namespace std;
+
+int test1() {
+    int x,y,z,prod,avg;
+    cout << "Type a number: ";
+    cin >> x;
+    cout << "Type another number: ";
+    cin >> y;
+    cout << "Type another number: ";
+    cin >> z;
+    prod = x*y*z;
+    avg = (x+y+z)/3;
+    cout << "prod is: " << prod;
+    cout << "\nAvg is: " << avg;
+    return 0;
+}
+
+
+int test2() {
+    int a,b,sum;
+    cout << "\nType a number: ";
+    cin >> a;
+    cout << "Type another number: ";
+    cin >> b;
+    sum = a+b;
+    cout << "sum is: " << sum;
+    return 0;
+}
+
+
+int main()
+{
+   test1();
+   test2();
+   return 0;
+}
+
+
+
+
+
+
+
+"""

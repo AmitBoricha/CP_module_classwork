@@ -37,7 +37,7 @@ print("minimum number: ",min(x))
 
 #write a program that takes list of dict with keys name and age and returns a list of names sorted by age in ascending order
 li = [{"name": "a","age":10},{"name": "b","age":20},{"name": "c","age":15}]
-def sorted_dict(li):
+def sorted_names_by_age(li):
     ages = []
     names = []
     for i in li:
@@ -48,14 +48,31 @@ def sorted_dict(li):
         for j in li:
             if x == j['age']:
                 names.append(j['name'])
-
     return names
 
 
-ascending_names_by_age = sorted_dict(li)
+
+
+ascending_names_by_age = sorted_names_by_age(li)
 print(ascending_names_by_age)
 
 
+#excercise3
+
+def termostat_regulator(temp,low_temp = 20,high_temp = 27):
+    if type(temp) != int:
+        print("Please enter an integer")
+        exit()
+    if temp < low_temp:
+        state = 'Turn on heater'
+    elif temp > high_temp:
+        state = 'Turn on cooler'
+    elif temp >= low_temp and temp <= high_temp:
+        state = 'do nothing'
+    print(state)
+    return state
+
+termostat_regulator(temp=15)
 
 
 

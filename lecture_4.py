@@ -76,6 +76,64 @@ termostat_regulator(temp=15)
 
 
 
+#excercise 4
+
+user_name = input("Whats your name?")
+
+def check_if_bond(user_name):
+    user_name = user_name.lower().strip()
+    if user_name == "james bond":
+        print("We've been expecting you, Mr Bond.")
+    else:
+        print(f"Access Denied:{user_name}")
+
+check_if_bond(user_name)
+
+#excercise 5
+
+x = input("please enter a number")
+
+if "." in x:
+    print(x.split(".")[1])
+else:
+    print(type(x))
+
+
+#excercise 6
+# password_list = []
+# def pass_collector(pass):
+#     if len(password_list) == 0:
+#         x = input("Please Enter your password: ")
+#         if len(x) < 8:
+#             x = input("Weak password: too short")
+#         list.append(x)
+
+
+
+x = input("Please enter password")
+if len(x) >= 8:
+    upper_case = False
+    lower_case = False
+    has_digit = False
+    for i in x:
+        if i.isupper():
+            upper_case = True
+        if i.islower():
+            lower_case = True
+        if i.isdigit():
+            has_digit = True
+    if upper_case == lower_case == has_digit == True:
+        print("Strong Password.")
+    else:
+        print("missing character types")
+
+if len(x) < 8:
+    print("Too weak. Please enter a different password.")
+
+
+
+
+
 
 
 

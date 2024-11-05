@@ -109,7 +109,7 @@ else:
 #         list.append(x)
 
 
-
+""""
 x = input("Please enter password")
 if len(x) >= 8:
     upper_case = False
@@ -128,7 +128,7 @@ if len(x) >= 8:
         print("missing character types")
 
 if len(x) < 8:
-    print("Too weak. Please enter a different password.")
+    print("Too weak. Please enter a different password.")""""
 
 
 

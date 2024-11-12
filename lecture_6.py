@@ -60,3 +60,19 @@ a1.check_balance()
 a1.withdraw(2000)
 a1.check_balance()
 
+
+#excercise 4
+
+class Car:
+    def __init__(self,make,model,year):
+        self.make = make
+        self.model = model
+        self.year = year
+
+    def description(self):
+        print(f"{self.year}, {self.make} {self.model}")
+
+
+c1 = Car("Mazda","6", 2022)
+
+c1.description()

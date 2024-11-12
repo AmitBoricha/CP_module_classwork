@@ -37,3 +37,26 @@ print(r1.area_of_rectangle())
 print(r1.perimeter_of_rectangle())
 
 
+#excercise3
+
+class BankAccount:
+    def __init__(self):
+        self.balance = 0
+
+    def deposit(self,deposit_amt):
+        self.balance =+ deposit_amt
+
+    def withdraw(self,withdraw_amt):
+        self.balance -= withdraw_amt
+
+    def check_balance(self):
+        print("current balance is: ",self.balance)
+
+
+a1 = BankAccount()
+a1.check_balance()
+a1.deposit(10000)
+a1.check_balance()
+a1.withdraw(2000)
+a1.check_balance()
+
